@@ -8,15 +8,73 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <ul>
-        <li><a>HTML/CSS Project</a></li>
-        <div class="pages">
-            <li><a href="index.html" id="highlight">Home</a></li>
-            <li><a id="center">Landmarks</a></li>
-            <li><a href="attractions.html" id="highlight">Attractions</a></li>
-            <li><a href="restaurants.html" id="highlight">Restaurants</a></li>
+    <nav>
+        <ul>
+            <li><a>HTML/CSS Project</a></li>
+            <li><a>Landmarks</a></li>
+            <div class="pages">
+                <li><a href="index.html" id="highlight">Home</a></li>
+                <li><a href="attractions.html" id="highlight">Attractions</a></li>
+                <li><a href="restaurants.html" id="highlight">Restaurants</a></li>
+            </div>
+        </ul>
+    </nav>
+    <h2>These are some great landmarks to check out!</h2>
+    <div class="container">
+        <img id="landmark" src="Images/landmark1.jpg" alt="landmark1">
+        <div id="info">
+            <p id="title">Statue Of Liberty</p>
+            <p>America's most iconic sight, the Statue of Liberty is at the top of every first-time visitor's list of things to do in New York. It was France's gift to America. Built in 1886, it remains a world symbol of freedom and is one of the top landmarks in America.</p>
+            <P>It is one of the world's largest statues, standing just under 152 feet tall from the base to the torch, and weighing approximately 450,000 pounds.</P>
         </div>
-    </ul>
+    </div>
+    <div class="container">
+        <div id="info">
+            <p id="title">Empire State Building</p>
+            <p>The world's most magnificent Art Deco skyscraper, it's a living piece of New York history and an instantly recognizable symbol of city culture today.</p>
+            <P>Standing at 102 stories and 1,454 feet at its pinnacle, the Empire State Building was the tallest building in the world for nearly 40 years after its completion.</P>
+        </div>
+        <img id="landmark" src="Images/landmark2.jpg" alt="landmark2">
+    </div>
+    <div class="container">
+        <img id="landmark" src="Images/landmark3.jpg" alt="landmark3">
+        <div id="info">
+            <p id="title">Central Park</p>
+            <p>Central Park is the largest and most important public park in Manhattan, New York City. It occupies an area of 840 acres and extends between 59th and 110th streets.</p>
+            <P>It contains unique attractions ranging from green meadows to sprawling waters, gardens and unique bridges, music and performance centers, educational facilities, classical architecture and more.</P>
+        </div>
+    </div>
+    <div class="survey">
+        <form>
+            <label>First Name</label>
+            <input type="text" placeholder="First Name" required>
+        
+            <label>Last Name</label>
+            <input type="text" placeholder="Last Name" required>
+
+            <label>Have you visited any of the places mentioned on the website?</label>
+            <div id="radiobutton">
+                <div>      
+                    <input type="radio" name="question" required>Yes</input>
+                </div>
+                <div>
+                    <input type="radio" name="question" required>No</input>
+                </div>
+            </div>
+            <label>Which of the landmarks above would you want to visit?</label>
+            <select required>
+                <option>Select Landmark</option>
+                <option>Statue Of Liberty</option>
+                <option>Empire State Building</option>
+                <option>Central Park</option>
+            </select>
+
+            <label>Website Improvement Recommendations</label>
+            <input type="text" placeholder="Recommendations">
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
     <hr>
     <footer>&copy; Copyright 2022 Jimmy Li | All Rights Reserved</footer>
 </body>

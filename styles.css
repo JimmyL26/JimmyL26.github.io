@@ -1,24 +1,21 @@
+/*General CSS For All Pages*/
+body {
+    background-color: white;
+}
 
-ul {
+nav > ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: gray;
+    background-color: rgb(33, 107, 156);
     font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-li{
+nav li {
     float: left;
-}
-
-.pages {
-    float: right;
-}
-
-#center {
-    position: absolute;
-    left: 48%;
 }
   
 li a{
@@ -50,6 +47,79 @@ h3 {
     padding-bottom: 10px;
 }
 
+footer {
+    padding-left: 25px;
+}
+
+.container {
+    display: flex;
+    border: solid;
+}
+
+#info {
+    font-size: 30px;
+    padding: 25px;
+    width: 900px;
+    overflow: auto;
+}
+
+#title {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1; 
+        grid-template-rows: auto;
+        grid-gap: 25px;
+        padding: 25px;
+    }
+
+    #restaurantgrid {
+        display: grid;
+        grid-template-columns: repeat(1, 275px); 
+        grid-template-rows: repeat(1, 300px);
+        padding: 25px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: auto;
+        grid-gap: 15px;
+        padding: 25px;
+    }
+
+    #restaurantgrid {
+        display: grid;
+        grid-template-columns: repeat(1, 275px); 
+        grid-template-rows: repeat(1, 300px);
+        padding: 25px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: auto;
+        grid-gap: 25px;
+        padding: 25px;
+    }
+
+    #restaurantgrid {
+        display: grid;
+        grid-template-columns: repeat(2, 450px); 
+        grid-template-rows: repeat(2, 300px);
+        padding: 25px;
+    }
+}
+
+/*CSS For Index*/
 .gallery > img {
     width: 100%;
     object-fit: cover;
@@ -70,40 +140,73 @@ h3 {
     grid-row: span 2;
 }
 
-@media only screen and (max-width: 768px) {
-    .gallery {
-        display: grid;
-        grid-template-columns: 1; 
-        grid-template-rows: auto;
-        grid-gap: 25px;
-        padding: 25px;
-    }
+/*CSS For Restaurant*/
+#restaurantgrid > img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    grid-row: span 1;
+    transition: 1s ease;
 }
 
-@media only screen and (min-width: 768px) {
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); 
-        grid-template-rows: auto;
-        grid-gap: 15px;
-        padding: 25px;
-    }
+/*CSS For Landmarks*/
+.container > #landmark {
+    width: 45%;
+    height: 35%;
+    padding: 25px;
 }
 
-@media only screen and (min-width: 1024px) {
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); 
-        grid-template-rows: auto;
-        grid-gap: 25px;
-        padding: 25px;
-    }
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-footer {
-    padding-left: 25px;
+#radiobutton {
+    width: 100%;
+    margin: 8px 0;
+}
+  
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+  
+.survey {
+    
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
 
-.container {
-    display: flex;
+/*CSS For Attractions*/
+.container > #attraction {
+    width: 45%;
+    height: 35%;
+    padding: 25px;
+}
+
+table, th, td { 
+    border: 1px solid; 
+    padding: 25px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 25px;
 }
