@@ -56,13 +56,6 @@ footer {
     border: solid;
 }
 
-#info {
-    font-size: 30px;
-    padding: 25px;
-    width: 900px;
-    overflow: auto;
-}
-
 #title {
     text-decoration: underline;
     font-weight: bold;
@@ -79,9 +72,27 @@ footer {
 
     #restaurantgrid {
         display: grid;
-        grid-template-columns: repeat(1, 275px); 
-        grid-template-rows: repeat(1, 300px);
+        grid-template-columns: repeat(1, 250px); 
+        grid-template-rows: repeat(1, 200px);
         padding: 25px;
+    }
+
+    #info {
+        font-size: 15px;
+        padding: 25px;
+        width: 900px;
+        overflow: auto;
+    }
+
+    video {
+        width: 175px;
+        height: 125px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 14px;
     }
 }
 
@@ -97,8 +108,26 @@ footer {
     #restaurantgrid {
         display: grid;
         grid-template-columns: repeat(1, 275px); 
-        grid-template-rows: repeat(1, 300px);
+        grid-template-rows: repeat(1, 220px);
         padding: 25px;
+    }
+
+    #info {
+        font-size: 20px;
+        padding: 25px;
+        width: 900px;
+        overflow: auto;
+    }
+
+    video {
+        width: 325px;
+        height: 200px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 20px;
     }
 }
 
@@ -116,6 +145,24 @@ footer {
         grid-template-columns: repeat(2, 450px); 
         grid-template-rows: repeat(2, 300px);
         padding: 25px;
+    }
+
+    #info {
+        font-size: 30px;
+        padding: 25px;
+        width: 900px;
+        overflow: auto;
+    }
+
+    video {
+        width: 450px;
+        height: 300px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 25px;
     }
 }
 
@@ -202,11 +249,5 @@ input[type=submit]:hover {
 
 table, th, td { 
     border: 1px solid; 
-    padding: 25px;
-}
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-    font-size: 25px;
+    padding: 10px;
 }
