@@ -61,6 +61,7 @@ footer {
     font-weight: bold;
 }
 
+/*Different Screen Sizes*/
 @media only screen and (max-width: 768px) {
     .gallery {
         display: grid;
