@@ -26,7 +26,7 @@ li a{
     text-decoration: none;
 }
   
-.pages li a#highlight:hover {
+.pages li a.highlight:hover {
     background-color: #111;
 }
   
@@ -56,7 +56,7 @@ footer {
     border: solid;
 }
 
-#title {
+.title {
     text-decoration: underline;
     font-weight: bold;
 }
@@ -71,14 +71,14 @@ footer {
         padding: 25px;
     }
 
-    #restaurantgrid {
+    .restaurantgrid {
         display: grid;
         grid-template-columns: repeat(1, 250px); 
         grid-template-rows: repeat(1, 200px);
         padding: 25px;
     }
 
-    #info {
+    .info {
         font-size: 15px;
         padding: 25px;
         width: 900px;
@@ -106,14 +106,14 @@ footer {
         padding: 25px;
     }
 
-    #restaurantgrid {
+    .restaurantgrid {
         display: grid;
         grid-template-columns: repeat(1, 275px); 
         grid-template-rows: repeat(1, 220px);
         padding: 25px;
     }
 
-    #info {
+    .info {
         font-size: 20px;
         padding: 25px;
         width: 900px;
@@ -141,14 +141,14 @@ footer {
         padding: 25px;
     }
 
-    #restaurantgrid {
+    .restaurantgrid {
         display: grid;
-        grid-template-columns: repeat(2, 450px); 
+        grid-template-columns: repeat(2, 1fr); 
         grid-template-rows: repeat(2, 300px);
         padding: 25px;
     }
 
-    #info {
+    .info {
         font-size: 30px;
         padding: 25px;
         width: 900px;
@@ -184,12 +184,12 @@ footer {
     transition: 1s ease;
 }
 
-#longIMG {
+.longIMG {
     grid-row: span 2;
 }
 
 /*CSS For Restaurant*/
-#restaurantgrid > img {
+.restaurantgrid > img {
     width: 100%;
     object-fit: cover;
     height: 100%;
@@ -198,7 +198,7 @@ footer {
 }
 
 /*CSS For Landmarks*/
-.container > #landmark {
+.container > .landmark {
     width: 45%;
     height: 35%;
     padding: 25px;
@@ -242,7 +242,7 @@ input[type=submit]:hover {
 }
 
 /*CSS For Attractions*/
-.container > #attraction {
+.container > .attraction {
     width: 45%;
     height: 35%;
     padding: 25px;
