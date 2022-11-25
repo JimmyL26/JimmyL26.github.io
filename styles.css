@@ -144,9 +144,8 @@ footer {
     .restaurantgrid {
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 300px);
         padding: 25px;
-        max-height: 1fr;
     }
 
     .info {
