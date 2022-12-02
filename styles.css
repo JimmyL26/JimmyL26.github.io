@@ -57,6 +57,7 @@ footer {
 .container {
     display: flex;
     border: solid;
+    width: 1fr;
 }
 
 .title {
